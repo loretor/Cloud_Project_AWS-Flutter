@@ -3,7 +3,7 @@ Small cloud project involving the usage of AWS technologies and Flutter environm
 
 ## Description
 The project is divided in two part:
-- Cloud infrastructure created using the functionalities provided by AWS
+- Cloud infrastructure created using functionalities provided by AWS
 - Flutter Application for querying the cloud infrastructure
 
 ## Usage
