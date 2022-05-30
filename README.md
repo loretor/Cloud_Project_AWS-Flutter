@@ -2,7 +2,7 @@
 Small cloud project involving the usage of AWS technologies and Flutter environment.
 
 ## Description
-The project consists in a cloud infrastructure that keeps data of races results, following the XML data format of [IOF](https://orienteering.sport/iof/it/data-standard-3-0/). The system permits to authorized users to upload and modify data of the database. In particular those action can be done simulating the `POST` request with a tool like [Postman](https://www.postman.com/) or [Hoppscotch](https://hoppscotch.io/it/). Instead all the `GET` request can be simulated with the tools exposed before or throught the Flutter Application.
+The project consists in a cloud infrastructure that keeps data of races results, following the XML data format of [IOF](https://orienteering.sport/iof/it/data-standard-3-0/). The system permits to authorized users to upload and modify data of the database. In particular those action can be done simulating the `POST` requests with a tool like [Postman](https://www.postman.com/) or [Hoppscotch](https://hoppscotch.io/it/). Instead all the `GET` requests can be simulated with the tools exposed before or throught the Flutter Application.
 
 The project is only a prototype for understanding the basics of AWS and Flutter. The AWS technologies used for the purpose are:
 - API Gateway
