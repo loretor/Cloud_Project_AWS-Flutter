@@ -16,7 +16,7 @@ The overall system is divided in two part:
 - Cloud infrastructure created using functionalities provided by AWS
 - Flutter Application for querying the cloud infrastructure
 
-## Usage
+## ❓ Usage
 The API provided througth AWS is temporally closed, so there is no way to query the database and change the tuples. Instead the code saved into `/AWS_Lambdas`📁, could be used to create those lambdas that are integrated to a specific routing for a new API Gateway.
 
 The code under `/Flutter_Application`📁 needs to be setted into the lib folder of a new Flutter project.
