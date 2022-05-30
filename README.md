@@ -15,4 +15,6 @@ The application is runnable with an Android Simulator or with an Android Device 
 For running the application you need to have installed [Flutter environment](https://docs.flutter.dev/get-started/install) on your pc and to set correctly an editor like VS Code.
 If you run the application data will not be shown because of the closure of my API. If you set a new API following the first part of the Usage paragraph, you can run the application chaning also the URL of your api inside the .dart files with the correct routing when needed.
 
+## Cloud Infrastructure
+
 
