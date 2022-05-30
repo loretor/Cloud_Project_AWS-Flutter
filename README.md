@@ -1,4 +1,4 @@
-# Cloud_Project ☁️
+# Cloud_Project ☁️💻
 Small cloud project involving the usage of AWS technologies and Flutter environment.
 
 ## Description
