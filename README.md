@@ -9,6 +9,7 @@ The project is only a prototype for understanding the basics of AWS and Flutter.
 - Lambda
 - DynamoDB
 - Bucket S3
+
 The overall system is divided in two part:
 - Cloud infrastructure created using functionalities provided by AWS
 - Flutter Application for querying the cloud infrastructure
