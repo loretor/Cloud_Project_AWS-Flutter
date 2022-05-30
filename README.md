@@ -2,7 +2,14 @@
 Small cloud project involving the usage of AWS technologies and Flutter environment.
 
 ## Description
-The project is divided in two part:
+The project consists in a cloud infrastructure that keeps data of races results, following the XML data format of [IOF](https://orienteering.sport/iof/it/data-standard-3-0/).
+
+The project is only a prototype for understanding the basics of AWS and Flutter. The AWS technologies used for the purpose are:
+- API Gateway
+- Lambda
+- DynamoDB
+- Bucket S3
+The overall system is divided in two part:
 - Cloud infrastructure created using functionalities provided by AWS
 - Flutter Application for querying the cloud infrastructure
 
