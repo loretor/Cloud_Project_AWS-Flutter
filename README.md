@@ -26,7 +26,7 @@ For running the application you need to have installed [Flutter environment](htt
 If you run the application, data will not be shown because of the closure of the API. If you create a new API following the first part of the Usage paragraph, you can run the application only if you change the URL of your api inside the .dart files with the correct routing when needed.
 
 ## ☁️💻 Cloud Infrastructure 
-
+![Image](/Images/CloudPOST.png)
 ## 📱📈 Flutter Application 
 
 
