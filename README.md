@@ -26,8 +26,10 @@ For running the application you need to have installed [Flutter environment](htt
 If you run the application, data will not be shown because of the closure of the API. If you create a new API following the first part of the Usage paragraph, you can run the application only if you change the URL of your api inside the .dart files with the correct routing when needed.
 
 ## ☁️💻 Cloud Infrastructure 
+This is a representation of the cloud architecture that involves all the possibile POST request
 ![Image](/Images/CloudPOST.png)
-1. ciao
+1. API URL/register_race?race_name=X&race_date=Y&email=Z
+   In this situation you are asking to the API to start your session to modify the database, so the API calls the lambda tokengenerator and with the help of the hashlib SHA256 algorithm it is created a unique token based on the information you gave to the API. You get a response with your token and the race_id which is important to specify in the future that you want to specify the race represented by this id (the race that you specified as parameter in the /register_race request
 2. 
 
 ![Image](/Images/CloudGET.png)
