@@ -76,7 +76,7 @@ Some things that can be done with the application:
 - by clicking on one race you get the list of the categories
 - by clicking on one category you get the ranking of all the athletes
 
-<img src="/Images/MenuRace.jpg" width="300" height="600"> <img src="/Images/MenuCategories.jpg" width="300" height="600"> <img src="/Images/MenuRanking.jpg" width="300" height="600">
+<img src="/Images/MenuRace.jpg" width="300" height="600">    <img src="/Images/MenuCategories.jpg" width="300" height="600">     <img src="/Images/MenuRanking.jpg" width="300" height="600">
 - you can click on a team to see all the other athletes of that team that took part in that race
 - you can click on "splitTime", and after that you need to rotate your phone to have a different representation of the ranking of all the atlethes.
 
