@@ -45,6 +45,25 @@ This is a representation of the cloud architecture that involves all the possibi
 
 ![Image](/Images/CloudGET.png)
 
+1. `API URL/list_races`
+   
+   When called, [ListEvent](/AWS_lambdas/ListEvent.py) returns a list of all the races saved in the database
+   
+2. `API URL/list_classes?id=x`
+
+   When called, [list_classes](/AWS_lambdas/list_classes.py) returns a list of all the categories (like ME, WE...) for a specific race identified with the race_id x. If there is no race saved into the database with that race_id the system returns a 🔴500🔴 internal error.
+
+3. `API URL/downloadxml?id=x`
+
+   When called, [downloadxml](/AWS_lambdas/downloadxml.py) returns the 📃 XML file of a specific race identified with the race_id x. If there is no race saved into the database with that race_id the system returns a 🔴500🔴 internal error.
+
+4. `API URL/results?id=x&class=z`
+
+   When called, [results2](/AWS_lambdas/results2.py) returns the list of the athletes' results of a specific race and category, identified with the race_id x and the class z. If there is no race saved into the database with that race_id or if does not exist a category specified for that race, the system returns a 🔴500🔴 internal error.
+
+4. `API URL/results?id=x&organization=z`
+
+   When called, [results2](/AWS_lambdas/results2.py) returns the list of the athletes' results of a specific race and organization (KALEVAN RASTI, FINLAND...), identified with the race_id x and the organization z. If there is no race saved into the database with that race_id or if does not exist an organization as the one specified, the system returns a 🔴500🔴 internal error.
 
 ## 📱📈 Flutter Application 
 
