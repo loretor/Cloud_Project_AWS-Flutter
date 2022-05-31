@@ -37,7 +37,7 @@ This is a representation of the cloud architecture that involves all the possibi
    The tuple token + race_id is saved by the lambda into a DynamoDB
 2. API URL/uploadxml
    
-   With this routing you need to put a valid XML file in the body of your request and as a header you need to put 'Authorization' = "token", and the token must be one get from the 1., because the lambda AuthorizerToken verify if there is a token into the DynamoDB and if not returns to the API an invalid Policy, and so you get a 401 error. Instead if the token matches one from the DynamoDB, the AuthorizerToken gets from that tuple the name of the race_id and creates a valid Policy for the API. So in this last case the uploadxml save the body of the request into the S3, naming if with the race_id.
+   With this routing you need to put a valid XML file in the body of your request and as a header you need to put 'Authorization' = "token", and the token must be one get from the 1., because the lambda AuthorizerToken verify if there is a token into the DynamoDB and if not returns to the API an invalid Policy, and so you get a 🔴401🔴 error. Instead if the token matches one from the DynamoDB, the AuthorizerToken gets from that tuple the name of the race_id and creates a valid Policy for the API. So in this last case the uploadxml save the body of the request into the S3, naming if with the race_id.
    
 
 This is a representation of the cloud architecture that involves all the possibile POST request
