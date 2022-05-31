@@ -27,6 +27,8 @@ If you run the application, data will not be shown because of the closure of the
 
 ## ☁️💻 Cloud Infrastructure 
 ![Image](/Images/CloudPOST.png)
+1. ciao
+2. 
 
 ![Image](/Images/CloudGET.png)
 ## 📱📈 Flutter Application 
