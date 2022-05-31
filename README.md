@@ -35,6 +35,7 @@ This is a representation of the cloud architecture that involves all the possibi
    In this situation you are asking to the API to start your session to modify the database, so the API calls the lambda [tokengenerator](/AWS_lambdas/tokengenerator.py) and with the help of the [hashlib](https://docs.python.org/3/library/hashlib.html) SHA256 algorithm it is created a unique token based on the information you gave to the API. You get a response with your token and the race_id which is important to specify in the future that you want to specify the race represented by this id (the race that you specified as parameter in the /register_race request.
    
    The tuple token + race_id is saved by the lambda into a DynamoDB
+   
 2.`API URL/uploadxml` 
    
    With this routing you need to put a valid XML file in the body of your request and as a header you need to put 'Authorization' = "token", and the token must be one get from the 1., because the lambda [AuthorizerToken](/AWS_lambdas/AuthorizerToken.py) verify if there is a token into the DynamoDB and if not returns to the API an invalid Policy, and so you get a 🔴401🔴 error. Instead if the token matches one from the DynamoDB, the AuthorizerToken gets from that tuple the name of the race_id and creates a valid Policy for the API. So in this last case the [uploadxml](/AWS_lambdas/uploadxml.py) save the body of the request into the S3, naming if with the race_id.
