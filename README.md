@@ -48,9 +48,7 @@ This is a representation of the cloud architecture that involves all the possibi
 1. `API URL/list_races`
    
    When called, [ListEvent](/AWS_lambdas/ListEvent.py) returns a list of all the races saved in the database. This routing needs to have a 📃 XML file already saved into the S3 Bucket named ListEvent.xml with this content:
-   `<ListEvent>
-
-   </ListEvent>`
+   `<ListEvent> </ListEvent>`
    
 2. `API URL/list_classes?id=x`
 
