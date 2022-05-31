@@ -77,8 +77,11 @@ Some things that can be done with the application:
 - by clicking on one category you get the ranking of all the athletes
 
 <img src="/Images/MenuRace.jpg" width="300" height="600" hspace="25">    <img src="/Images/MenuCategories.jpg" width="300" height="600" hspace="25">     <img src="/Images/MenuRanking.jpg" width="300" height="600">
+
 - you can click on a team to see all the other athletes of that team that took part in that race
 - you can click on "splitTime", and after that you need to rotate your phone to have a different representation of the ranking of all the atlethes.
+
+<img src="/Images/MenuClub.jpg" width="300" height="600" hspace="25">    <img src="/Images/MenuSplit.jpg" width="300" height="600" hspace="25">
 
 ⚠️⚠️ If no data are shown there are two possibile situation ⚠️⚠️
 - the code isn't setted correctly, maybe the URL of the API is not correct inside the .dart file
