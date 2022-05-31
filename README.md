@@ -67,5 +67,18 @@ This is a representation of the cloud architecture that involves all the possibi
    When called, [results2](/AWS_lambdas/results2.py) returns the list of the athletes' results of a specific race and organization (KALEVAN RASTI, FINLAND...), identified with the race_id x and the organization z. If there is no race saved into the database with that race_id or if does not exist an organization as the one specified, the system returns a 🔴500🔴 internal error.
 
 ## 📱📈 Flutter Application 
+The Flutter Application is a prototype of a Web App that can replicate the five `GET` requests seen before, without the usage of Postman, but with a good User Interface.
 
+The Application is organized in different .dart file that represents a specific window of the application, or a type of button. 
+
+Some things that can be done with the application:
+- the app can see all the races saved into the database
+- by clicking on one race you get the list of the categories
+- by clicking on one category you get the ranking of all the athletes
+- you can click on a team to see all the other athletes of that team that took part in that race
+- you can click on "splitTime", and after that you need to rotate your phone to have a different representation of the ranking of all the atlethes.
+
+⚠️⚠️ If no data are shown there are two possibile situation ⚠️⚠️
+- the code isn't setted correctly, maybe the URL of the API is not correct inside the .dart file
+- Instead could be that the request didn't get any response; in this case you can scroll down to refresh the page
 
