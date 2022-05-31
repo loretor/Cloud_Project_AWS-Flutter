@@ -34,7 +34,7 @@ This is a representation of the cloud architecture that involves all the possibi
 
    In this situation you are asking to the API to start your session to modify the database, so the API calls the lambda [tokengenerator](/AWS_lambdas/tokengenerator.py) and with the help of the [hashlib](https://docs.python.org/3/library/hashlib.html) SHA256 algorithm it is created a unique token based on the information you gave to the API. You get a response with your token and the race_id which is important to specify in the future that you want to specify the race represented by this id (the race that you specified as parameter in the /register_race request.
    
-   The tuple token + race_id is saved by the lambda into a DynamoDB
+   The tuple token + race_id is saved by the lambda into a DynamoDB.
    
 2.`API URL/uploadxml` 
    
@@ -47,7 +47,10 @@ This is a representation of the cloud architecture that involves all the possibi
 
 1. `API URL/list_races`
    
-   When called, [ListEvent](/AWS_lambdas/ListEvent.py) returns a list of all the races saved in the database
+   When called, [ListEvent](/AWS_lambdas/ListEvent.py) returns a list of all the races saved in the database. This routing needs to have a 📃 XML file already saved into the S3 Bucket named ListEvent.xml with this content:
+   `<ListEvent>
+
+   </ListEvent>`
    
 2. `API URL/list_classes?id=x`
 
