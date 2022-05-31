@@ -72,7 +72,7 @@ The Flutter Application is a prototype of a Web App that can replicate the five 
 The Application is organized in different .dart file that represents a specific window of the application, or a type of button. 
 
 Some things that can be done with the application:
-- the app can see all the races saved into the database <img src="/Images/MenuRace.jpg" width="400" height="200">
+- the app can see all the races saved into the database <img src="/Images/MenuRace.jpg" width="200" height="400">
 - by clicking on one race you get the list of the categories
 - by clicking on one category you get the ranking of all the athletes
 - you can click on a team to see all the other athletes of that team that took part in that race
