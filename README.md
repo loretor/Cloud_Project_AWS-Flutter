@@ -83,7 +83,7 @@ Some things that can be done with the application:
 
 <img src="/Images/MenuClub.jpg" width="300" height="600" hspace="25">    <img src="/Images/MenuSplit.jpg" width="600" height="300" hspace="25">
 
-⚠️⚠️ If no data are shown there are two possibile situation ⚠️⚠️
+⚠️⚠️ If no data is shown there are two possibile scenarios⚠️⚠️
 - the code isn't setted correctly, maybe the URL of the API is not correct inside the .dart file
 - Instead could be that the request didn't get any response; in this case you can scroll down to refresh the page
 
