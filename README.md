@@ -67,7 +67,7 @@ This is a representation of the cloud architecture that involves all the possibi
    When called, [results2](/AWS_lambdas/results2.py) returns the list of the athletes' results of a specific race and organization (KALEVAN RASTI, FINLAND...), identified with the race_id x and the organization z. If there is no race saved into the database with that race_id or if does not exist an organization as the one specified, the system returns a 🔴500🔴 internal error.
 
 ## 📱📈 Flutter Application 
-The Flutter Application is a prototype of a Web App that can replicate the five `GET` requests seen before, without the usage of Postman, but with a good User Interface.
+The Flutter Application is a prototype of a Web App that can simulate the five `GET` requests seen before, without the usage of Postman. The aim of this project was not to create a good looking application, but instead to understand the basics of Flutter and to try to create a connection between the application and the AWS environment.
 
 The Application is organized in different .dart file that represents a specific window of the application, or a type of button. 
 
