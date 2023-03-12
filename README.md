@@ -38,7 +38,7 @@ This is a representation of the cloud architecture that involves all the possibi
    
 2.`API URL/uploadxml` 
    
-   With this routing you need to put a valid 📃 XML file in the body of your request and as a header you need to put 'Authorization' = "token", and the token must be one get from the 1., because the lambda [AuthorizerToken](/AWS_lambdas/AuthorizerToken.py) verify if there is a token into the DynamoDB and if not returns to the API an invalid Policy, and so you get a 🔴401🔴 error. Instead if the token matches one from the DynamoDB, the AuthorizerToken gets from that tuple the name of the race_id and creates a valid Policy for the API. So in this last case the [uploadxml](/AWS_lambdas/uploadxml.py) save the body of the request into the S3, naming if with the race_id.
+   With this routing you need to put a valid 📃 XML file in the body of your request and as a header you need to put 'Authorization' = "token", and the token must be one got from the 1. By doing so, the lambda [AuthorizerToken](/AWS_lambdas/AuthorizerToken.py) verify if there is a token into the DynamoDB and if not (you are not authorized to publish XML files in the cloud), it returns to the API an invalid Policy, and so you get a 🔴401🔴 error. Instead if the token matches one from the DynamoDB (you are authorized to upload XML files in the cloud) the AuthorizerToken gets from that tuple the name of the race_id and creates a valid Policy for the API. So in this last case the [uploadxml](/AWS_lambdas/uploadxml.py) save the body of the request into the S3, naming it with the race_id.
    
 
 This is a representation of the cloud architecture that involves all the possibile `GET` request
