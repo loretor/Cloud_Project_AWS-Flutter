@@ -26,7 +26,7 @@ In order to run the application it is needed to have installed [Flutter environm
 Of course the application will not show any data, because of the closure of the API; but if a new API is recreated following the first part of the Usage paragraph, it is possible to run the original application, changing the URL of the new API, just created, inside the .dart files with the correct routing when needed.
 
 ## ☁️💻 Cloud Infrastructure 
-This is a representation of the cloud architecture that involves all the possibile `POST` request
+This is a representation of the cloud architecture that involves all the possibile `POST` request. The blue lines🔵 corresponds to the flow of the 1. 'POST' request, instead the black⚫ ones are for the 2. 'POST' request.
 
 ![Image](/Images/CloudPOST.png)
 
