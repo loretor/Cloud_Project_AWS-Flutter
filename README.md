@@ -69,7 +69,7 @@ This is a representation of the cloud architecture that involves all the possibi
 ## 📱📈 Flutter Application 
 The Flutter Application is a prototype of a Web App that can simulate the five `GET` requests seen before, without the usage of Postman. The aim of this project was not to create a good looking application, but instead to understand the basics of Flutter and to try to create a connection between the application and the AWS environment.
 
-The Application is organized in different .dart file that represents a specific window of the application, or a type of button. 
+The Application is organized in different .dart files that represents a specific window of the application, or a type of button. 
 
 Some things that can be done with the application:
 - the app can see all the races saved into the database 
@@ -85,5 +85,5 @@ Some things that can be done with the application:
 
 ⚠️⚠️ If no data is shown there are two possibile scenarios⚠️⚠️
 - the code isn't setted correctly, maybe the URL of the API is not correct inside the .dart file
-- Instead could be that the request didn't get any response; in this case you can scroll down to refresh the page
+- it could also be that the request didn't get any response; in this case you can scroll down to refresh the page
 
